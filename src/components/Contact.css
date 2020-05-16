@@ -1,0 +1,67 @@
+.contact {
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.07);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.contact:hover {
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact:first-of-type {
+  margin-bottom: 5px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+.contact .contact__data:nth-child(2) {
+  color: #4c84ff;
+}
+
+.contact:first-of-type .contact__avatar {
+  border: none;
+}
+
+.contact:first-of-type .contact__data:nth-child(2) {
+  color: #000;
+}
+
+.contact__avatar {
+  border-radius: 45px;
+  height: 45px;
+  overflow: hidden;
+  width: 45px;
+  border: 2px solid #9fa9bc;
+  margin-right: 10px;
+}
+
+.contact__avatar img {
+  height: 100%;
+  transition: ease 0.5s;
+}
+
+.contact__avatar img:hover {
+  transform: scale(1.4);
+  transition: ease 0.4s;
+}
+
+.contact__data {
+  width: calc(100% / 6);
+  padding: 0 10px;
+}
+
+.contact__data:nth-child(2) {
+  color: #4c84ff;
+}
